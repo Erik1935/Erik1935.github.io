@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Encriptador</title>
+</head>
+<body >
+    <nav class="navbar navbar-dark bg-dark ">
+        <div class="container-fluid">
+            <img src="img/alura.svg" alt="Logo"  class="d-inline-block align-text-top">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse miNavbar" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">By: Erik1935</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              Encriptador De Texto
+            </span>
+          </div>
+        </div>
+      </nav>
+    <div class="row container-fluid justify-content-center mt-5">
+        <div class="col-sm-5 col-11 m-6 mb-3 entrada container-fluid justify-content-center">
+            <div class="row mb-3 mt-3">
+                <input type="text" id="textoPorProcesar" class=" texto" placeholder="Ingrese el texto aqui" aria-label="Username" aria-describedby="basic-addon1">
+        
+            </div>
+            <div class="row justify-content-center mb-5  ">
+                <div class="d-grid gap-2 d-md-block">
+                    <button id="encriptar" class="btn btn-primary" type="button">Encriptar</button>
+                    <button type="button" id="desencriptar" class="btn btn-outline-primary">Desencriptar</button>
+                  </div>
+            </div>
+        </div>
+        <div class="col-sm-5 col-11 m-6 resultado">
+            <div class="row" id="mostradorTexto">
+                <img class="img-fluid" src="img/busqueda.png" alt="">
+                <span>Aqui se mostrara el texto encriptado o desencriptado</span>
+            </div>
+            <div class="row m-5 justify-content-center">
+                <div class="d-grid gap-2 d-md-block">
+                    <button id="copiar" class="btn btn-primary" type="button">Copiar</button>
+                    <span id="aviso"></span>
+                  </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/tratamientoDeTexto.js"></script>
+</html>

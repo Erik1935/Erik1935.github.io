@@ -1,0 +1,22 @@
+.texto{
+    border: none;
+    outline: none;
+    background: transparent;
+    height: 13rem;
+}
+.texto:focus{
+   border-color: #fff;
+}
+.texto::placeholder{
+    color: blue;
+}
+.resultado,.entrada{
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.miNavbar ul li a,.miNavbar span{
+    color: #fff;
+}
+body{
+    width: 100%;
+}
